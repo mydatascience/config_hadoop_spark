@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>dfs.replication</name>
+    <value>3</value>
+  </property>
+  <property>
+	  <name>dfs.namenode.name.dir</name>
+	  <value>/mnt/ssd/namenode</value>
+  </property>
+  <property>
+	  <name>dfs.datanode.data.dir</name>
+	  <value>file:/mnt/hdd1/datanode,file:/mnt/hdd2/datanode,file:/mnt/hdd3/datanode,file:/mnt/hdd4/datanode,file:/mnt/hdd5/datanode,file:/mnt/hdd6/datanode,file:/mnt/hdd7/datanode,file:/mnt/hdd8/datanode,file:/mnt/hdd9/datanode,file:/mnt/hdd10/datanode,file:/mnt/hdd11/datanode,file:/mnt/hdd12/datanode</value>
+  </property>
+  <property>
+	  <name>dfs.blocksize</name>
+	  <value>64m</value>
+  </property>
+ 
+  <property>
+	  <name>dfs.client.read.shortcircuit</name>
+	  <value>true</value>
+  </property>
+ <property>
+           <name>dfs.domain.socket.path</name>
+	   <value>/var/lib/hadoop-2.7.5/dn_socket</value>
+   </property>   
+ <property>
+                 <name>dfs.datanode.handler.count</name>
+                 <value>50</value>
+  </property>
+  <property>
+                  <name>dfs.heartbeat.interval</name>
+                          <value>1</value>
+                          </property>   
+</configuration>

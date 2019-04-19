@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>yarn.resourcemanager.hostname</name>
+    <value>saber-11</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
+<property>
+    <name>yarn.nodemanager.pmem-check-enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+    <name>yarn.nodemanager.vmem-check-enabled</name>
+    <value>false</value>
+  </property>
+  <property>
+   <name>yarn.nodemanager.resource.memory-mb</name>
+   <value>180000</value>
+  </property>
+  <property>
+   <name>yarn.nodemanager.resource.cpu-vcores </name>
+   <value>192</value>
+   </property>  
+  <property>
+	  <name>yarn.scheduler.minimum-allocation-mb</name>
+	      <value>2500</value>
+	      </property>
+   <property>
+	   <name>yarn.scheduler.maximum-allocation-mb</name>
+		<value>4000</value>
+	</property>
+  <property>
+   <name>yarn.nodemanager.container-manager.thread-count</name>
+   <value>200</value>
+   </property>
+   <property>
+   <name>yarn.nodemanager.delete.thread-count</name>
+   <value>100</value>
+   </property>
+   <property>
+	      <name>yarn.resourcemanager.resource-tracker.client.thread-count</name>
+	         <value>100</value>
+	 </property>
+   <property>
+	                 <name>yarn.nodemanager.localizer.client.thread-count</name>
+			                  <value>20</value>
+					           </property>
+ <property>
+	               <name>yarn.nodemanager.localizer.fetch.thread-count</name>
+		                        <value>20</value>
+					         </property>
+ <property>
+ <name>yarn.nodemanager.container-monitor.interval-ms</name>						                                        <value>100</value>		</property>
+
+</configuration>

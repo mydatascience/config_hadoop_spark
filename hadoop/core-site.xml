@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://saber-11:8020</value>
+  </property>
+  <property>
+	  <name>hadoop.tmp.dir</name>
+	  <value>/mnt/hdd1/hadooptmp,/mnt/hdd2/hadooptmp,/mnt/hdd3/hadooptmp,/mnt/hdd4/hadooptmp,/mnt/hdd5/hadooptmp,/mnt/hdd6/hadooptmp,/mnt/hdd7/hadooptmp,/mnt/hdd8/hadooptmp,/mnt/hdd9/hadooptmp,/mnt/hdd10/hadooptmp,/mnt/hdd11/hadooptmp,/mnt/hdd12/hadooptmp</value>
+		             <description>A base for other temporary directories.</description>
+		     </property>
+		     <!--
+<property> <name>io.native.lib.available</name> <value>true</value> </property> <property> <name>io.compression.codecs</name> <value>org.apache.hadoop.io.compress.GzipCodec,org.apache. hadoop.io.compress.DefaultCodec,com.hadoop.compression.lz o.LzoCodec,com.hadoop.compression.lzo.LzopCodec,org.apach e.hadoop.io.compress.BZip2Codec</value> </property> <property> <name>io.compression.codec.lzo.class</name> <value>com.hadoop.compression.lzo.LzoCodec</value> </property>
+-->
+
+<property>
+<name>io.compression.codecs</name>
+<value>org.apache.hadoop.io.compress.GzipCodec,org.apache.hadoop.io.compress.DefaultCodec,org.apache.hadoop.io.compress.BZip2Codec,com.hadoop.compression.lzo.LzoCodec,com.hadoop.compression.lzo.LzopCodec</value>
+</property>
+
+<property>
+<name>io.compression.codec.lzo.class</name>
+<value>com.hadoop.compression.lzo.LzoCodec</value>
+</property>
+
+</configuration>
